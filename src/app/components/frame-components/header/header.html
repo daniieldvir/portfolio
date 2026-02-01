@@ -1,0 +1,19 @@
+<nav class="header-nav">
+    <p>Daniiel Dvir Portfolio</p>
+    <ul>
+        @for (link of navLinks(); track link.label) {
+        <li>
+            <ng-icon [name]="link.icon" />
+            <a [routerLink]="link.path">{{ link.label }}</a>
+        </li>
+        }
+    </ul>
+
+    <button class="button" (click)="toggleTheme()">
+        @if (isDarkMode()) {
+        <ng-icon name="heroSun" class="theme-icon" [style.width.px]="24" [style.height.px]="24" />
+        } @else {
+        <ng-icon name="heroMoon" class="theme-icon" [style.width.px]="24" [style.height.px]="24" />
+        }
+    </button>
+</nav>

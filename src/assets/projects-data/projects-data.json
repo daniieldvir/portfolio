@@ -1,0 +1,129 @@
+[
+    {
+        "projectName": "Pokemon Evolution",
+        "description": "The user can see all existing Pokémon, arranged by evolution starting from generation 1. Each Pokémon is colored according to its type. The details page shows the Pokémon's name, average size and height, front and back images including shiny mode, abilities, and moves. Users can choose light or dark mode; settings are saved for next time.",
+        "team": "Individual",
+        "mainTechnology": "React",
+        "backend": "N/A",
+        "database": "https://pokeapi.co/",
+        "styling": "CSS",
+        "otherTechnologies": [],
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1658649018/daniiel/pokemon-evolution_amz0n0.png",
+        "website": "https://daniieldvir.github.io/PokemonEvolution",
+        "sourceCode": "https://github.com/daniieldvir/PokemonEvolution"
+    },
+    {
+        "projectName": "Desserts Ordering App",
+        "description": "This is a demo dessert ordering app. Users can enter their information and order their favorite desserts. Data is sent to Firebase in real-time. The app is mobile responsive.",
+        "team": "Individual",
+        "mainTechnology": "React",
+        "backend": "Firebase",
+        "database": "Firebase",
+        "styling": "CSS",
+        "otherTechnologies": [],
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1654460773/daniiel/loveinmytummy_un214h.png",
+        "website": "https://daniieldvir.github.io/loveInMyTummy/",
+        "sourceCode": "https://github.com/daniieldvir/loveInMyTummy"
+    },
+    {
+        "projectName": "Article Simulation App",
+        "description": "This is a demo article simulation app. Users can add multiple photos, or stick with one. Arrows appear only when there are two pictures. The title is limited to 2 lines and can be colored using available options. Description is limited to 3 lines. The app is mobile responsive.",
+        "team": "Individual",
+        "mainTechnology": "React",
+        "backend": "N/A",
+        "database": "N/A",
+        "styling": "CSS",
+        "otherTechnologies": [],
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1653990295/daniiel/Screen_Shot_2022-05-31_at_12.44.12_mwoloa.png",
+        "website": "https://daniieldvir.github.io/articleSimulation/",
+        "sourceCode": "https://github.com/daniieldvir/articleSimulation"
+    },
+    {
+        "projectName": "Rent me",
+        "description": "Coding Academy final project – an Airbnb-based app.",
+        "team": "A group of three members",
+        "mainTechnology": "Vue.js with CLI",
+        "backend": "Node.js",
+        "database": "MongoDB (Atlas Cloud)",
+        "styling": "SASS",
+        "otherTechnologies": [
+            "Session Storage"
+        ],
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1639937591/daniiel/Screen_Shot_2021-12-19_at_20.11.41_czt0nz.png",
+        "website": "https://rentme-bnb.herokuapp.com/",
+        "sourceCode": "https://github.com/daniieldvir/rent-me.git"
+    },
+    {
+        "projectName": "Dietitian Registration",
+        "description": "A project exploring approaches to help users achieve sustainable weight loss.",
+        "team": "Individual",
+        "mainTechnology": "Angular with CLI",
+        "backend": "N/A",
+        "database": "N/A",
+        "styling": "SASS",
+        "otherTechnologies": [],
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1644773768/daniiel/Screen_Shot_2022-02-13_at_19.35.11_swdisw.png",
+        "website": "https://daniieldvir.github.io/smadi/",
+        "sourceCode": "https://github.com/daniieldvir/smadi"
+    },
+    {
+        "projectName": "Bitcoin",
+        "description": "Coding Academy project – Bitcoin transfer app using Bitcoin API.",
+        "team": "Individual",
+        "mainTechnology": "Angular",
+        "backend": "N/A",
+        "database": "N/A",
+        "styling": "CSS",
+        "otherTechnologies": [
+            "Session Storage"
+        ],
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1643201790/daniiel/Screen_Shot_2022-01-26_at_14.55.44_vejpmh.png",
+        "website": "https://daniieldvir.github.io/bit/",
+        "sourceCode": "https://github.com/daniieldvir/bit"
+    },
+    {
+        "projectName": "Appsus",
+        "description": "Coding Academy third project – three apps in one: Google-Keep-based, Gmail-based, and Book-store application.",
+        "team": "A group of two members",
+        "mainTechnology": "Vue.js",
+        "backend": "N/A",
+        "database": "N/A",
+        "styling": "CSS",
+        "otherTechnologies": [
+            "Session Storage"
+        ],
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1639943548/daniiel/Screen_Shot_2021-12-19_at_21.51.51_sqghgp.png",
+        "website": "https://daniieldvir.github.io/appsus/#/",
+        "sourceCode": "https://github.com/daniieldvir/appsus.git"
+    },
+    {
+        "projectName": "Recipe Book",
+        "description": "An Udemy Angular project for a recipe book. Data is linked to Firebase, and the website is hosted on Firebase. Features include local storage, NgRx state management, and HTTP requests.",
+        "team": "Individual",
+        "mainTechnology": "Angular with CLI",
+        "backend": "Firebase, Node.js",
+        "database": "Firebase",
+        "styling": "Bootstrap",
+        "otherTechnologies": [
+            "Local Storage",
+            "NgRx",
+            "Http"
+        ],
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1645885227/daniiel/Screen_Shot_2022-02-26_at_16.19.48_q05xrc.png",
+        "website": "https://udemy-project-cd6a0.web.app/",
+        "sourceCode": "https://github.com/daniieldvir/recipes-book"
+    },
+    {
+        "projectName": "Demo WhatsApp",
+        "description": "A demo WhatsApp app. Users can search for chats from dummy data and read them. The chat view allows returning to the start by clicking the back arrow. The app is mobile responsive.",
+        "team": "Individual",
+        "mainTechnology": "React",
+        "backend": "N/A",
+        "database": "N/A",
+        "styling": "SASS",
+        "otherTechnologies": [],
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1647532271/daniiel/Screen_Shot_2022-03-17_at_17.50.36_lqjb11.png",
+        "website": "https://whatsapp-13511.web.app/#/",
+        "sourceCode": "https://github.com/daniieldvir/whatsapp"
+    }
+]

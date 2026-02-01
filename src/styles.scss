@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--app-background-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+:root[data-theme="light"] {
+    --app-background-color: linear-gradient(49deg, rgba(174, 238, 223, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    --text-color: #000000;
+    --primary-color: #1e90ff;
+    --background-color: #ffffff;
+}
+
+:root[data-theme="dark"] {
+    /* Dark theme overrides */
+    --app-background-color: linear-gradient(49deg, rgba(20, 40, 60, 1) 0%, rgba(50, 80, 120, 1) 100%);
+    --text-color: #f0f0f0;
+    --primary-color: #3399ff;
+    --background-color: #1a1a1a;
+}
