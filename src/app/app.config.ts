@@ -11,7 +11,8 @@ import {
   heroServer,
   heroSun,
   heroUser,
-  heroDevicePhoneMobile
+  heroDevicePhoneMobile,
+  heroBriefcase
 
 } from '@ng-icons/heroicons/outline';
 import { provideStore } from '@ngxs/store';
@@ -35,7 +36,7 @@ export const appConfig: ApplicationConfig = {
       heroServer,
       heroGlobeAlt,
       heroDevicePhoneMobile,
-     
+      heroBriefcase,
     }),
   ]
 };

@@ -2,13 +2,11 @@
     <p>Portfolio</p>
     <ul>
         @for (link of navLinks(); track link.label) {
-        <li>
+        <li [routerLink]="link.path" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: link.path === '/' }">
             <ng-icon [name]="link.icon" />
-            <a [routerLink]="link.path" routerLinkActive="active"
-                [routerLinkActiveOptions]="{ exact: link.path === '/' }">
-                {{ link.label }}
-            </a>
+            <span>{{ link.label }}</span>
         </li>
+
         }
     </ul>
 

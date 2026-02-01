@@ -1,1 +1,59 @@
-<p>about works!</p>
+<div class="about-container">
+    <app-card class="bio-card">
+        <h2>Who I Am</h2>
+
+        <p class="bio-text">
+            Frontend Developer with 4+ years of experience building
+            user-focused web applications, mostly in large-scale, production environments.
+        </p>
+
+        <p class="bio-text">
+            I enjoy creating clean, scalable interfaces and collaborating closely with product,
+            design, and backend teams to turn ideas into intuitive and polished user experiences.
+        </p>
+
+        <p class="bio-text">
+            My main expertise is in Angular and TypeScript, where I’ve worked extensively on complex
+            systems, building reusable and responsive UI components using modern patterns and best practices.
+            I’m experienced with monorepo setups and contributing to shared libraries used in production.
+        </p>
+
+        <p class="bio-text">
+            Alongside Angular, I have hands-on experience with React through personal projects and teaching.
+            This has helped me develop a strong understanding of component-based architecture, state management,
+            and modern frontend thinking across frameworks.
+        </p>
+    </app-card>
+
+    <!-- Volunteering Section -->
+    <div class="volunteering-section">
+        <h2>Community & Volunteering</h2>
+        <div class="volunteering-grid">
+            @for (vol of volunteering(); track vol.organization) {
+            <app-card class="volunteer-card">
+                <div class="vol-header">
+                    <h3>{{ vol.role }}</h3>
+                    <span class="period">{{ vol.period }}</span>
+                </div>
+                <h4 class="organization">{{ vol.organization }}</h4>
+                <p>{{ vol.description }}</p>
+            </app-card>
+            }
+        </div>
+    </div>
+
+
+    <!-- Highlights Grid -->
+    <div class="highlights-grid">
+        @for (highlight of highlight(); track highlight.title) {
+        <app-card class="highlight-card">
+            <div class="highlight-icon">{{ highlight.icon }}</div>
+            <h3>{{ highlight.title }}</h3>
+            <p>{{ highlight.description }}</p>
+            @if (highlight.stats) {
+            <div class="highlight-stats">{{ highlight.stats }}</div>
+            }
+        </app-card>
+        }
+    </div>
+</div>

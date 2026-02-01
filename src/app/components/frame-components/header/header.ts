@@ -15,8 +15,9 @@ export class Header {
 
   protected readonly navLinks = signal([
     { label: 'Home', path: '/', icon: 'heroHome' },
-    { label: 'About', path: '/about', icon: 'heroUser' },
     { label: 'Projects', path: '/projects', icon: 'heroCodeBracket' },
+    { label: 'Experience', path: '/experience', icon: 'heroBriefcase' },
+    { label: 'About', path: '/about', icon: 'heroUser' },
   ]);
 
 

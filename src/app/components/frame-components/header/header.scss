@@ -28,18 +28,13 @@
             padding: 8px;
             border-radius: 8px;
             transition: background 0.2s ease;
-
-            a {
-                color: var(--text-color);
-                text-decoration: none;
-                transition: color 0.2s ease;
-            }
+            cursor: pointer;
 
             &:hover {
                 background: var(--button-hover-color);
             }
 
-            &:has(a.active) {
+            &.active {
                 background: var(--button-hover-color);
             }
         }

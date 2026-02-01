@@ -29,7 +29,7 @@ export class ProjectsCard {
       ],
     },
     {
-      name: 'TaskFlow',
+      name: 'TaskFlow - Desktop only',
       description: 'A task management app for organizing your tasks.',
       image: 'https://res.cloudinary.com/disku3v4j/image/upload/v1769953732/daniiel/1769431335079_wqvdtm.jpg',
       tags: [
@@ -39,5 +39,5 @@ export class ProjectsCard {
       ],
     },
   ]);
-  
+
 }
