@@ -1,0 +1,43 @@
+@use 'colors' as *;
+@use 'breakpoints' as *;
+
+@mixin header-frame {
+    .header-frame {
+        --frame-height: 90px;
+        --frame-width: 500px;
+        --frame-justify-content: center;
+
+
+        .header-frame-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            gap: 10px;
+
+            @include mobile {
+                gap: 8px;
+            }
+
+            .icon {
+                margin-left: 10px;
+                color: $main-text-color-highlight;
+                cursor: pointer;
+
+                @include mobile {
+                    margin-left: 10px;
+                }
+            }
+
+            h1 {
+                width: 100%;
+                color: $main-text-color-highlight;
+                font-size: 1.5rem;
+
+                @include mobile {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,47 +1,72 @@
+@use '../../../../styles/colors' as *;
+@use '../../../../styles/helpers' as *;
+@use '../../../../styles/breakpoints' as *;
+
 :host {
     display: block;
-    color: var(--text-color);
     padding: 20px;
 
-    .projects-container {
-        max-width: 1400px;
-        margin: 0 auto;
+
+    .page-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 40px;
+        padding-top: 40px;
 
-        .page-header {
-            text-align: center;
-            padding: 40px 20px 20px;
-
-            .page-subtitle {
-                font-size: 1.15rem;
-                color: var(--text-color);
-                opacity: 0.7;
-                margin: 0;
-                max-width: 600px;
-                margin: 0 auto;
-                line-height: 1.6;
-
-                @media (max-width: 768px) {
-                    font-size: 1rem;
-                }
-            }
+        @include tablet {
+            gap: 28px;
+            padding-top: 24px;
         }
 
-        .projects-grid {
+        @include mobile {
+            gap: 20px;
+            padding-top: 16px;
+        }
+
+        @include header-frame;
+
+        .projects-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            grid-template-columns: repeat(3, 450px);
             gap: 32px;
             padding: 0 20px 40px;
+            width: 100%;
+            justify-content: center;
 
-            @media (max-width: 768px) {
-                grid-template-columns: 1fr;
+            @include desktop {
+                grid-template-columns: repeat(2, minmax(320px, 450px));
                 gap: 24px;
             }
 
-            @media (min-width: 1200px) {
-                grid-template-columns: repeat(3, 1fr);
+            @include tablet {
+                grid-template-columns: repeat(2, minmax(280px, 1fr));
+                gap: 20px;
+                padding: 0 12px 32px;
+            }
+
+            @include mobile {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 0 0 24px;
+            }
+
+            .project-frame {
+                --frame-height: 550px;
+                --frame-width: 450px;
+
+                @include desktop {
+                    --frame-width: min(100%, 450px);
+                }
+
+                @include tablet {
+                    --frame-width: 100%;
+                }
+
+                @include mobile {
+                    --frame-width: 100%;
+                    --frame-height: 460px;
+                }
             }
         }
     }

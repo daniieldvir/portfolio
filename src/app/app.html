@@ -1,4 +1,4 @@
-<main>
-    <app-header />
-    <router-outlet></router-outlet>
-</main>
+<app-home id="home" [pagesSections]="pagesSections" (sectionClicked)="scrollToSection($event)" />
+<app-projects id="projects" (goBackClick)="scrollToSection('home')" />
+<app-about id="about" (goBackClick)="scrollToSection('home')" />
+<app-more-info id="more-info" (goBackClick)="scrollToSection('home')" />

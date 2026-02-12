@@ -7,7 +7,6 @@ import { ProjectsActions } from './projects.action';
 
 export interface ProjectsStateModel {
   projects: Project[];
-
 }
 
 @Injectable()
@@ -24,10 +23,8 @@ export class ProjectsState {
   getProjects(ctx: StateContext<ProjectsStateModel>) {
     return this.projectService.getProjects().pipe(
       tap((projects) => {
-        console.log(projects);
         ctx.patchState({ projects });
       })
     );
   }
-
 }

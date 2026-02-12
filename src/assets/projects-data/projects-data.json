@@ -1,9 +1,57 @@
 [
     {
+        "projectName": "AI Game Master",
+        "description": "AI game master is a web application that allows you to play games with AI.",
+        "team": "Individual",
+        "mainTechnology": "React",
+        "otherTechnologies": [ "Groq LLM"],
+        "styling": "SCSS",
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1770918361/Screenshot_1_yagn4p.png",
+        "tags": [
+            {
+                "label": "Website",
+                "full": "Website",
+                "link": "https://daniieldvir.github.io/ai-game-master/"
+            },
+            {
+                "label": "Code",
+                "full": "Source Code",
+                "link": "https://github.com/daniieldvir/ai-game-master"
+            }
+        ]
+    },
+    {
+        "projectName": "Task Manager",
+        "description": "Task Manager is a web application that allows you to manage your tasks.",
+        "team": "Individual",
+        "mainTechnology": "Angular",
+        "otherTechnologies": [ "Supabase",  "PostgreSQL"],
+        "styling": "SCSS",
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1770918558/1770290626085_poo8ge.jpg",
+        "userAccess": [
+            {
+                "userName": "test@test.com",
+                "password": "123456"
+            }
+        ],
+        "tags": [
+            {
+                "label": "Website",
+                "full": "Website",
+                "link": "https://daniieldvir.github.io/task-manager/login"
+            },
+            {
+                "label": "Code",
+                "full": "Source Code",
+                "link": "https://github.com/daniieldvir/task-manager"
+            }
+        ]
+    },
+    {
         "projectName": "DevForm",
         "description": "Personal dev blog with articles and a discussion forum with nested replies.",
         "team": "Individual",
-        "mainTechnology": "Angular 21",
+        "mainTechnology": "Angular",
         "styling": "SCSS",
         "otherTechnologies": [
             "Local Storage",
@@ -30,6 +78,12 @@
         "team": "Individual",
         "mainTechnology": "React - Desktop only",
         "styling": "SCSS",
+        "userAccess": [
+            {
+                "userName": "Daniiel",
+                "password": "123"
+            }
+        ],
         "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1769953732/daniiel/1769431335079_wqvdtm.jpg",
         "tags": [
             {
@@ -46,26 +100,6 @@
                 "label": "Back",
                 "full": "Backend Source Code",
                 "link": "https://github.com/daniieldvir/task-flow-backend"
-            }
-        ]
-    },
-    {
-        "projectName": "Desserts Ordering App",
-        "description": "Order your favorite desserts with real-time Firebase updates; mobile responsive.",
-        "team": "Individual",
-        "mainTechnology": "React",
-        "styling": "CSS",
-        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1654460773/daniiel/loveinmytummy_un214h.png",
-        "tags": [
-            {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://daniieldvir.github.io/loveInMyTummy/"
-            },
-            {
-                "label": "Code",
-                "full": "Source Code",
-                "link": "https://github.com/daniieldvir/loveInMyTummy"
             }
         ]
     },
@@ -127,31 +161,6 @@
                 "label": "Code",
                 "full": "Source Code",
                 "link": "https://github.com/daniieldvir/appsus.git"
-            }
-        ]
-    },
-    {
-        "projectName": "Recipe Book",
-        "description": "Angular recipe book with Firebase backend, local storage, NgRx, and HTTP requests.",
-        "team": "Individual",
-        "mainTechnology": "Angular with CLI",
-        "styling": "Bootstrap",
-        "otherTechnologies": [
-            "Local Storage",
-            "NgRx",
-            "Http"
-        ],
-        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1645885227/daniiel/Screen_Shot_2022-02-26_at_16.19.48_q05xrc.png",
-        "tags": [
-            {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://udemy-project-cd6a0.web.app/"
-            },
-            {
-                "label": "Code",
-                "full": "Source Code",
-                "link": "https://github.com/daniieldvir/recipes-book"
             }
         ]
     }

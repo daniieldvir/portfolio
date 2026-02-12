@@ -1,11 +1,11 @@
 import { Component, input } from '@angular/core';
 import { NgIconsModule } from '@ng-icons/core';
 import { Project } from '../../../../models/project.model';
-import { Card } from '../../../shared/card/card';
+import { ProjectTagComponent } from '../../../UI/project-tag/project-tag';
 
 @Component({
   selector: 'app-project-details',
-  imports: [Card, NgIconsModule],
+  imports: [ NgIconsModule, ProjectTagComponent],
   templateUrl: './project-details.html',
   styleUrl: './project-details.scss',
 })

@@ -1,0 +1,7 @@
+@use '../../../../styles/colors' as *;
+
+.project-tag {
+    color: $secondary-text-color;
+    padding: 4px 10px;
+    text-decoration: none;
+}

@@ -1,59 +1,74 @@
 <div class="about-container">
-    <app-card class="bio-card">
-        <h2>Who I Am</h2>
-
-        <p class="bio-text">
-            Frontend Developer with 4+ years of experience building
-            user-focused web applications, mostly in large-scale, production environments.
-        </p>
-
-        <p class="bio-text">
-            I enjoy creating clean, scalable interfaces and collaborating closely with product,
-            design, and backend teams to turn ideas into intuitive and polished user experiences.
-        </p>
-
-        <p class="bio-text">
-            My main expertise is in Angular and TypeScript, where I’ve worked extensively on complex
-            systems, building reusable and responsive UI components using modern patterns and best practices.
-            I’m experienced with monorepo setups and contributing to shared libraries used in production.
-        </p>
-
-        <p class="bio-text">
-            Alongside Angular, I have hands-on experience with React through personal projects and teaching.
-            This has helped me develop a strong understanding of component-based architecture, state management,
-            and modern frontend thinking across frameworks.
-        </p>
-    </app-card>
-
-    <!-- Volunteering Section -->
-    <div class="volunteering-section">
-        <h2>Community & Volunteering</h2>
-        <div class="volunteering-grid">
-            @for (vol of volunteering(); track vol.organization) {
-            <app-card class="volunteer-card">
-                <div class="vol-header">
-                    <h3>{{ vol.role }}</h3>
-                    <span class="period">{{ vol.period }}</span>
-                </div>
-                <h4 class="organization">{{ vol.organization }}</h4>
-                <p>{{ vol.description }}</p>
-            </app-card>
-            }
+    <app-frame class="header-frame">
+        <div class="header-frame-content">
+            <ng-icon (click)="goBack()" class="icon" name="heroArrowUpCircle" size="20" />
+            <h1>About Me</h1>
         </div>
-    </div>
+    </app-frame>
 
 
-    <!-- Highlights Grid -->
+    <app-frame class="bio-card">
+        <div class="bio-content">
+            <div class="right-side">
+                <div class="bio-image-container">
+                    <img src="assets/images/me.jpeg" alt="About Me" class="bio-image">
+                </div>
+
+
+                <div class="contact-me">
+                    <h3>Contact Me</h3>
+                    <div class="contact-item">
+                        <ng-icon class="icon" name="heroDevicePhoneMobile" size="20"/>
+                        <a [href]="'tel:' + contact().phone">{{ contact().phone }}</a>
+                    </div>
+                    <div class="contact-item">
+                        <ng-icon class="icon" name="heroEnvelope" size="20"/>
+                        <a [href]="'mailto:' + contact().email">{{ contact().email }}</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bio-text-container">
+                <h2>Who I Am</h2>
+
+                <p class="bio-text">
+                    Frontend Developer with 4+ years of experience building
+                    user-focused web applications, mostly in large-scale, production environments.
+                </p>
+
+                <p class="bio-text">
+                    I enjoy creating clean, scalable interfaces and collaborating closely with product,
+                    design, and backend teams to turn ideas into intuitive and polished user experiences.
+                </p>
+
+                <p class="bio-text">
+                    My main expertise is in Angular and TypeScript, where I’ve worked extensively on complex
+                    systems, building reusable and responsive UI components using modern patterns and best practices.
+                    I’m experienced with monorepo setups and contributing to shared libraries used in production.
+                </p>
+
+                <p class="bio-text">
+                    Alongside Angular, I have hands-on experience with React through personal projects and teaching.
+                    This has helped me develop a strong understanding of component-based architecture, state management,
+                    and modern frontend thinking across frameworks.
+                </p>
+            </div>
+        </div>
+    </app-frame>
+
+
+
     <div class="highlights-grid">
         @for (highlight of highlight(); track highlight.title) {
-        <app-card class="highlight-card">
+        <app-frame class="highlight-card">
             <div class="highlight-icon">{{ highlight.icon }}</div>
             <h3>{{ highlight.title }}</h3>
-            <p>{{ highlight.description }}</p>
+            <p >{{ highlight.description }}</p>
             @if (highlight.stats) {
             <div class="highlight-stats">{{ highlight.stats }}</div>
             }
-        </app-card>
+        </app-frame>
         }
     </div>
 </div>

@@ -2,79 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Georgia', serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden;
+}
+
+html,
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: var(--app-background-color);
-    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main,
+app-root {
+    height: 100%;
+}
+
+body {
+    background: url('/assets/images/home-background.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
-h2 {
-    font-size: 22px;
-}
-
-:root {
-    --app-background-color: linear-gradient(49deg, rgba(174, 238, 223, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    --text-color: #000000;
-    --primary-color: #1e90ff;
-    --background-color: #ffffff;
-    --hover-color-primary: #e5e7eb;
-    --button-hover-color: #e5e7eb;
-
-    // card colors
-    --card-background-color: #ffffff;
-    --card-text-color: #000000;
-    --card-border-color: #e0e0e0;
-    --card-shadow-color: rgba(0, 0, 0, 0.04);
-
-    // social links
-    --social-link-color: #4b5563;
-    --social-link-hover-color: #1f2937;
-    --social-link-hover-background-color: #e5e7eb;
-
-    // project tags
-    --project-tag-background-color: #f0f0f0;
-    --project-tag-text-color: #000000;
-    --project-tag-border-color: #e0e0e0;
-    --project-tag-shadow-color: rgba(0, 0, 0, 0.04);
-
-
-}
-
-:root[data-theme="dark"] {
-    /* Dark theme overrides */
-    --app-background-color: linear-gradient(49deg, rgba(20, 40, 60, 1) 0%, rgba(50, 80, 120, 1) 100%);
-    --text-color: #f0f0f0;
-    --primary-color: #3399ff;
-    --background-color: #1a1a1a;
-    --hover-color-primary: #e5e7eb;
-    --button-hover-color: #374151;
-
-    // card colors
-    --card-background-color: #1a1a1a;
-    --card-text-color: #f0f0f0;
-    --card-border-color: #2a2a2a;
-    --card-shadow-color: #000000;
-
-    // social links
-    --social-link-color: #d1d5db;
-    --social-link-hover-color: #ffffff;
-    --social-link-hover-background-color: #374151;
-
-    // project tags
-    --project-tag-background-color: #2a2a2a;
-    --project-tag-text-color: #f0f0f0;
-    --project-tag-border-color: #374151;
-    --project-tag-shadow-color: #000000;
-
-   
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url('/assets/images/home-background.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
 }

@@ -1,99 +1,160 @@
+@use '../../../../../styles/colors' as *;
+@use '../../../../../styles/breakpoints' as *;
+
 :host {
     display: block;
     height: 100%;
-
 
     .project-card {
         height: 100%;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
-        padding: 0;
-        cursor: pointer;
+        gap: 25px;
+
+        @include mobile {
+            gap: 16px;
+        }
 
         &:hover {
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            box-shadow: $card-shadow;
         }
 
         .image-container {
             position: relative;
             width: 100%;
-            aspect-ratio: 16/10;
+            height: 180px;
             overflow: hidden;
-            background: var(--background-color);
+            border-radius: 8px 8px 0 0;
+
+            @include mobile {
+                height: 140px;
+            }
 
             .project-image {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-
+                opacity: 0.8;
             }
 
             .image-gradient {
                 position: absolute;
-                inset: 0;
-                background: linear-gradient(to bottom,
-                        transparent 0%,
-                        transparent 60%,
-                        rgba(0, 0, 0, 0.4) 80%,
-                        rgba(0, 0, 0, 0.7) 100%);
-                opacity: 0.5;
-                transition: opacity 0.3s ease;
-                pointer-events: none;
+                bottom: 0;
+                width: 100%;
+                height: 50%;
+                background: linear-gradient(to top, rgba(28, 26, 23, 1), transparent);
             }
         }
 
         .card-content {
-            padding: 24px;
             display: flex;
             flex-direction: column;
             gap: 12px;
             flex: 1;
 
             .project-title {
-                font-size: 1.35rem;
-                font-weight: 700;
+                font-size: 24px;
+                color: $main-text-color-highlight;
                 margin: 0;
-                color: var(--text-color);
-                letter-spacing: -0.02em;
-                transition: color 0.2s ease;
-                line-height: 1.3;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                letter-spacing: 1px;
+
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+
+            .project-technology {
+                font-size: 14px;
+                text-transform: uppercase;
+                color: $decoration-color;
+                font-weight: bold;
+                letter-spacing: 2px;
             }
 
             .project-description {
-                font-size: 0.95rem;
-                line-height: 1.6;
-                color: var(--text-color);
-                opacity: 0.75;
-                margin: 0;
-                flex: 1;
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
+                font-size: 15px;
+                line-height: 1.5;
+                color: $main-text-color;
+                margin: 10px 0;
+
+                @include mobile {
+                    font-size: 14px;
+                    padding-inline: 10px;
+                }
             }
 
-            .tech-tags {
+            .project-user-access {
+                margin-inline: 10px;
+            }
+
+        }
+
+        .project-footer {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-inline: 15px;
+            padding-block: 5px;
+            border-top: 1px solid $sections-border-color;
+
+            @include mobile {
+                flex-wrap: wrap;
+                height: auto;
+                min-height: 70px;
+                gap: 12px;
+                margin-inline: 8px;
+            }
+
+            .project-tags {
+                margin: 10px 0;
+
+                @include mobile {
+                    width: 100%;
+                    order: 2;
+                }
+            }
+
+            .links-tags {
                 display: flex;
-                gap: 8px;
-                margin-top: auto;
-                align-items: center;
-          
+                gap: 15px;
+                margin-left: auto;
+
+                @include mobile {
+                    margin-left: 0;
+                    order: 1;
+                }
 
                 .quick-link {
+                    color: $decoration-color;
+                    transition: color 0.2s, transform 0.2s;
                     display: flex;
                     align-items: center;
-                    padding: 5px;
-                    border-radius: 50%;
-                    color: var(--social-link-color);
 
                     &:hover {
-                        background: var(--social-link-hover-background-color);
-                        color: var(--social-link-hover-color);
+                        color: $secondary-text-color;
+                        transform: scale(1.2);
                     }
                 }
             }
+
         }
+
+
+        .project-user-access,
+        .project-tags {
+            background: $project-tag-background-color;
+            border-left: 3px solid $frame-border-color;
+            padding: 10px;
+            font-size: 13px;
+            font-style: italic;
+
+            @include mobile {
+                padding: 8px;
+                font-size: 12px;
+            }
+        }
+
     }
 }

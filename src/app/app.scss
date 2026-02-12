@@ -1,0 +1,13 @@
+app-projects,
+app-about,
+app-more-info {
+    padding-top: 140px;
+
+    @media (max-width: 768px) {
+        padding-top: 100px;
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 80px;
+    }
+}

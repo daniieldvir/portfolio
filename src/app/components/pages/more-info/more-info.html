@@ -1,0 +1,28 @@
+<div class="more-info-container">
+    <app-frame class="header-frame">
+        <div class="header-frame-content">
+            <ng-icon (click)="goBack()" class="icon" name="heroArrowUpCircle" size="20" />
+            <h1>More Info</h1>
+        </div>
+    </app-frame>
+
+    <app-frame class="more-info-card">
+        <div class="more-info-content">
+            <h2>What do you want to know about me?</h2>
+
+            <div class="questions">
+                @for (q of questions(); track q.question) {
+                <app-question-button [title]="q.question" (selectQuestionClick)="selectQuestion(q.answer)"/>
+                }
+            </div>
+
+            <app-decoration class="divider" [amount]="3"/>
+            @if (displayedText()) {
+
+            <div class="narrator-response">
+                <p class="typewriter-text">{{ displayedText() }}<span class="cursor">|</span></p>
+            </div>
+            }
+        </div>
+    </app-frame>
+</div>

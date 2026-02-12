@@ -1,12 +1,16 @@
-<div class="projects-container">
-    <header class="page-header">
-        <h1>My Projects</h1>
-        <p class="page-subtitle">A showcase of my work, experiments, and creative solutions</p>
-    </header>
-
-    <div class="projects-grid">
+<div class="page-container">
+    <app-frame class="header-frame">
+        <div class="header-frame-content">
+            <ng-icon (click)="goBack()" class="icon" name="heroArrowUpCircle" size="20" />
+            <h1>Projects</h1>
+        </div>
+    </app-frame>
+ 
+    <div class="projects-container">
         @for (project of projects(); track project.projectName) {
-        <app-project-details [project]="project" />
+            <app-frame class="project-frame" [decorationAmount]="1">
+                <app-project-details [project]="project" />
+            </app-frame>
         }
     </div>
 </div>

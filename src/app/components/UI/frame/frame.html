@@ -1,0 +1,10 @@
+<div class="frame">
+
+    @if(topDecoration()) {
+      <app-decoration [amount]="decorationAmount()"/>
+    }
+    <ng-content></ng-content>
+    @if(bottomDecoration()) {
+      <app-decoration [amount]="decorationAmount()"/>
+    }
+</div>

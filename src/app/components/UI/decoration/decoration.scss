@@ -1,0 +1,9 @@
+@use '../../../../styles/colors' as *;
+
+.decoration {
+    color: $decoration-color;
+    font-size: 18px;
+    text-align: center;
+    pointer-events: none;
+  }
+  
