@@ -1,7 +1,7 @@
 import { Component, input, output } from '@angular/core';
+import { PageSection } from '../../../models/variable-models.model';
 import { DecorationComponent } from '../../UI/decoration/decoration';
 import { FrameComponent } from '../../UI/frame/frame';
-import { PageSection } from '../../../models/variable-models.model';
 
 @Component({
   selector: 'app-home',
@@ -26,8 +26,8 @@ export class HomeComponent {
 
   downloadCV() {
     const link = document.createElement('a');
-    link.href = '/assets/cv/Daniel_Dvir_CV.pdf';
-    link.download = 'Daniel_Dvir_CV.pdf';
+    link.href = '/assets/cv/Daniiel_Dvir_CV.pdf';
+    link.download = 'Daniiel_Dvir_CV.pdf';
     link.click();
   }
 
