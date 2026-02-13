@@ -24,17 +24,3 @@ main,
 app-root {
     height: 100%;
 }
-
-body {
-    background: url('/assets/images/home-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
-
-body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background: url('/assets/images/home-background.jpg') no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-}

@@ -11,3 +11,20 @@ app-more-info {
         padding-top: 80px;
     }
 }
+
+.background-image {
+    position: fixed;
+    inset: 0;
+    background-image: url('/assets/images/home-background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
