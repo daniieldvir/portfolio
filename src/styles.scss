@@ -24,3 +24,11 @@ main,
 app-root {
     height: 100%;
 }
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-color: #614213;
+    z-index: -2; 
+}

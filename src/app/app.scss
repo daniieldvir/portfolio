@@ -20,11 +20,11 @@ app-more-info {
     background-position: center;
     z-index: -1;
 
-    
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
 }
