@@ -26,8 +26,8 @@ export class HomeComponent {
 
   downloadCV() {
     const link = document.createElement('a');
-    link.href = '/assets/cv/Daniiel_Dvir_CV.pdf';
-    link.download = 'Daniiel_Dvir_CV.pdf';
+    link.href = '/assets/cv/Daniiel_Dvir_Frontend.pdf';
+    link.download = 'Daniiel_Dvir_Frontend.pdf';
     link.click();
   }
 
