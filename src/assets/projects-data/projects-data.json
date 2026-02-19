@@ -1,10 +1,35 @@
 [
     {
+        "projectName": "AI Frontend Reviewer",
+        "description": "The app provides instant feedback on performance, readability, and best practices for Angular, React, and Vue. Leveraging the power of Groq AI (Llama 3), it translates complex code issues into actionable suggestions.",
+        "team": "Individual",
+        "mainTechnology": "Angular",
+        "otherTechnologies": [
+            "Groq LLM", "Local Storage"
+        ],
+        "styling": "SCSS",
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771497164/1_nv3ufc.png",
+        "tags": [
+            {
+                "label": "Website",
+                "full": "Website",
+                "link": "https://daniieldvir.github.io/ai-frontend-code-reviewer/"
+            },
+            {
+                "label": "Code",
+                "full": "Source Code",
+                "link": "https://github.com/daniieldvir/ai-frontend-code-reviewer"
+            }
+        ]
+    },
+    {
         "projectName": "AI Game Master",
         "description": "AI game master is a web application that allows you to play games with AI.",
         "team": "Individual",
         "mainTechnology": "React",
-        "otherTechnologies": [ "Groq LLM"],
+        "otherTechnologies": [
+            "Groq LLM"
+        ],
         "styling": "SCSS",
         "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1770918361/Screenshot_1_yagn4p.png",
         "tags": [
@@ -25,7 +50,10 @@
         "description": "Task Manager is a web application that allows you to manage your tasks.",
         "team": "Individual",
         "mainTechnology": "Angular",
-        "otherTechnologies": [ "Supabase",  "PostgreSQL"],
+        "otherTechnologies": [
+            "Supabase",
+            "PostgreSQL"
+        ],
         "styling": "SCSS",
         "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1770918558/1770290626085_poo8ge.jpg",
         "userAccess": [
