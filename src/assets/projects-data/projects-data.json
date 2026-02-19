@@ -3,9 +3,10 @@
         "projectName": "AI Frontend Reviewer",
         "description": "The app provides instant feedback on performance, readability, and best practices for Angular, React, and Vue. Leveraging the power of Groq AI (Llama 3), it translates complex code issues into actionable suggestions.",
         "team": "Individual",
-        "mainTechnology": "Angular (Desktop only)",
+        "mainTechnology": "Angular",
         "otherTechnologies": [
-            "Groq LLM", "Local Storage"
+            "Groq LLM",
+            "Local Storage"
         ],
         "styling": "SCSS",
         "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771497164/1_nv3ufc.png",
