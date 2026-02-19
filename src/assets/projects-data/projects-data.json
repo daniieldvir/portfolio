@@ -3,7 +3,7 @@
         "projectName": "AI Frontend Reviewer",
         "description": "The app provides instant feedback on performance, readability, and best practices for Angular, React, and Vue. Leveraging the power of Groq AI (Llama 3), it translates complex code issues into actionable suggestions.",
         "team": "Individual",
-        "mainTechnology": "Angular",
+        "mainTechnology": "Angular (Desktop only)",
         "otherTechnologies": [
             "Groq LLM", "Local Storage"
         ],
@@ -26,7 +26,7 @@
         "projectName": "AI Game Master",
         "description": "AI game master is a web application that allows you to play games with AI.",
         "team": "Individual",
-        "mainTechnology": "React",
+        "mainTechnology": "React (Desktop only)",
         "otherTechnologies": [
             "Groq LLM"
         ],
