@@ -1,26 +1,51 @@
-[    {
-    "projectName": "Love in My Tummy",
-    "description": "single-page application built for an artisanal bakery. Developed using React, TypeScript, and SCSS, it offers a seamless and engaging user experience, featuring dynamic routing, an elegant UI with custom CSS styling, and an interactive contact form.",
-    "team": "Individual",
-    "mainTechnology": "React",
-    "otherTechnologies": [
-        "TypeScript"
-    ],
-    "styling": "SCSS",
-    "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771591118/Screenshot_1_srztdu.png",
-    "tags": [
-        {
-            "label": "Website",
-            "full": "Website",
-            "link": "https://daniieldvir.github.io/love-in-my-tummy/"
-        },
-        {
-            "label": "Code",
-            "full": "Source Code",
-            "link": "https://github.com/daniieldvir/love-in-my-tummy"
-        }
-    ]
-},
+[
+    {
+        "projectName": "Pokémon Evolution",
+        "description": "An interactive web app for exploring and comparing Pokémon with a focus on UX, performance, and clean architecture.Features include infinite scroll, favorites with localStorage persistence, and side-by-side Pokémon comparison.",
+        "team": "Individual",
+        "mainTechnology": "React",
+        "otherTechnologies": [
+            "TypeScript",
+            "PokeAPI"
+        ],
+        "styling": "SCSS",
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771759392/Screenshot_2_ph8p9o.png",
+        "tags": [
+            {
+                "label": "Website",
+                "full": "Website",
+                "link": "https://daniieldvir.github.io/pokemon-evolution/"
+            },
+            {
+                "label": "Code",
+                "full": "Source Code",
+                "link": "https://github.com/daniieldvir/pokemon-evolution"
+            }
+        ]
+    },
+    {
+        "projectName": "Love in My Tummy",
+        "description": "single-page application built for an artisanal bakery. Developed using React, TypeScript, and SCSS, it offers a seamless and engaging user experience, featuring dynamic routing, an elegant UI with custom CSS styling, and an interactive contact form.",
+        "team": "Individual",
+        "mainTechnology": "React",
+        "otherTechnologies": [
+            "TypeScript"
+        ],
+        "styling": "SCSS",
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771591118/Screenshot_1_srztdu.png",
+        "tags": [
+            {
+                "label": "Website",
+                "full": "Website",
+                "link": "https://daniieldvir.github.io/love-in-my-tummy/"
+            },
+            {
+                "label": "Code",
+                "full": "Source Code",
+                "link": "https://github.com/daniieldvir/love-in-my-tummy"
+            }
+        ]
+    },
     {
         "projectName": "AI Frontend Reviewer",
         "description": "The app provides instant feedback on performance, readability, and best practices for Angular, React, and Vue. Leveraging the power of Groq AI (Llama 3), it translates complex code issues into actionable suggestions.",
@@ -31,7 +56,7 @@
             "Local Storage"
         ],
         "styling": "SCSS",
-        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771497164/1_nv3ufc.png",
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771759231/1_nv3ufc.png",
         "tags": [
             {
                 "label": "Website",
@@ -51,7 +76,8 @@
         "team": "Individual",
         "mainTechnology": "React (Desktop only)",
         "otherTechnologies": [
-            "Groq LLM", "TypeScript"
+            "Groq LLM",
+            "TypeScript"
         ],
         "styling": "SCSS",
         "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1770918361/Screenshot_1_yagn4p.png",
