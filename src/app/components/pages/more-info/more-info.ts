@@ -19,6 +19,7 @@ export class MoreInfoComponent {
   public questions = signal<Question[]>(QUESTIONS);
   public selectedAnswer = signal<string>('');
   public displayedText = signal<string>('');
+  public date = new Date().getFullYear();
 
   public selectQuestion(answer: string): void {
     this.selectedAnswer.set(answer);

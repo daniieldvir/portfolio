@@ -1,107 +1,13 @@
 [
     {
-        "projectName": "Pokémon Evolution",
-        "description": "An interactive web app for exploring and comparing Pokémon with a focus on UX, performance, and clean architecture.Features include infinite scroll, favorites with localStorage persistence, and side-by-side Pokémon comparison.",
-        "team": "Individual",
-        "mainTechnology": "React",
-        "otherTechnologies": [
-            "TypeScript",
-            "PokeAPI"
-        ],
-        "styling": "SCSS",
-        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771759392/Screenshot_2_ph8p9o.png",
-        "tags": [
-            {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://daniieldvir.github.io/pokemon-evolution/"
-            },
-            {
-                "label": "Code",
-                "full": "Source Code",
-                "link": "https://github.com/daniieldvir/pokemon-evolution"
-            }
-        ]
-    },
-    {
-        "projectName": "Love in My Tummy",
-        "description": "single-page application built for an artisanal bakery. Developed using React, TypeScript, and SCSS, it offers a seamless and engaging user experience, featuring dynamic routing, an elegant UI with custom CSS styling, and an interactive contact form.",
-        "team": "Individual",
-        "mainTechnology": "React",
-        "otherTechnologies": [
-            "TypeScript"
-        ],
-        "styling": "SCSS",
-        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771591118/Screenshot_1_srztdu.png",
-        "tags": [
-            {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://daniieldvir.github.io/love-in-my-tummy/"
-            },
-            {
-                "label": "Code",
-                "full": "Source Code",
-                "link": "https://github.com/daniieldvir/love-in-my-tummy"
-            }
-        ]
-    },
-    {
-        "projectName": "AI Frontend Reviewer",
-        "description": "The app provides instant feedback on performance, readability, and best practices for Angular, React, and Vue. Leveraging the power of Groq AI (Llama 3), it translates complex code issues into actionable suggestions.",
-        "team": "Individual",
-        "mainTechnology": "Angular",
-        "otherTechnologies": [
-            "Groq LLM",
-            "Local Storage"
-        ],
-        "styling": "SCSS",
-        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771759231/1_nv3ufc.png",
-        "tags": [
-            {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://daniieldvir.github.io/ai-frontend-code-reviewer/"
-            },
-            {
-                "label": "Code",
-                "full": "Source Code",
-                "link": "https://github.com/daniieldvir/ai-frontend-code-reviewer"
-            }
-        ]
-    },
-    {
-        "projectName": "AI Game Master",
-        "description": "An interactive, DnD-inspired game where the AI acts as the Game Master, guiding the story in real time.The player creates a character, chooses a world, and the narrative evolves dynamically based on their decisions.",
-        "team": "Individual",
-        "mainTechnology": "React (Desktop only)",
-        "otherTechnologies": [
-            "Groq LLM",
-            "TypeScript"
-        ],
-        "styling": "SCSS",
-        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1770918361/Screenshot_1_yagn4p.png",
-        "tags": [
-            {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://daniieldvir.github.io/ai-game-master/"
-            },
-            {
-                "label": "Code",
-                "full": "Source Code",
-                "link": "https://github.com/daniieldvir/ai-game-master"
-            }
-        ]
-    },
-    {
         "projectName": "Task Manager",
-        "description": "Task Manager is a web application that allows you to manage your tasks.",
+        "description": "A comprehensive task management application that enables users to securely log in, organize, and track their tasks efficiently with real-time database synchronization.",
         "team": "Individual",
-        "mainTechnology": "Angular",
-        "otherTechnologies": [
+        "technology": [
+            "Angular",
             "Supabase",
-            "PostgreSQL"
+            "Node.js",
+            "NGXS"
         ],
         "styling": "SCSS",
         "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1770918558/1770290626085_poo8ge.jpg",
@@ -125,35 +31,16 @@
         ]
     },
     {
-        "projectName": "DevForm",
-        "description": "Personal dev blog with articles and a discussion forum with nested replies.",
-        "team": "Individual",
-        "mainTechnology": "Angular",
-        "styling": "SCSS",
-        "otherTechnologies": [
-            "Local Storage",
-            "NgRx",
-            "Http"
-        ],
-        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1769953732/daniiel/1766503849575_aaqulk.jpg",
-        "tags": [
-            {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://daniieldvir.github.io/devblog/"
-            },
-            {
-                "label": "Code",
-                "full": "Source Code",
-                "link": "https://github.com/daniieldvir/devblog"
-            }
-        ]
-    },
-    {
         "projectName": "TaskFlow",
-        "description": "Manage Alert Tasks and Incidents with add, edit, delete, filters, and interactive overview.",
+        "description": "An Incident Management Dashboard to manage alert tasks and incidents with capabilities to add, edit, delete, and filter through an interactive overview.",
         "team": "Individual",
-        "mainTechnology": "React - Desktop only",
+        "technology": [
+            "React",
+            "Node.js",
+            "Prisma",
+            "TypeScript",
+            "React Query"
+        ],
         "styling": "SCSS",
         "userAccess": [
             {
@@ -181,14 +68,137 @@
         ]
     },
     {
-        "projectName": "Rent me",
-        "description": "Airbnb-inspired app built with Vue.js, Node.js, and MongoDB.",
-        "team": "3 members",
-        "mainTechnology": "Vue.js with CLI",
-        "styling": "SASS",
-        "otherTechnologies": [
-            "Session Storage"
+        "projectName": "AI Game Master",
+        "description": "An interactive, DnD-inspired game where an AI acts as the Game Master, guiding the story in real-time. Players create characters and make choices that dynamically evolve the narrative.",
+        "team": "Individual",
+        "technology": [
+            "React",
+            "Node.js",
+            "TypeScript",
+            "Groq AI"
         ],
+        "styling": "SCSS",
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1770918361/Screenshot_1_yagn4p.png",
+        "tags": [
+            {
+                "label": "Website",
+                "full": "Website",
+                "link": "https://daniieldvir.github.io/ai-game-master/"
+            },
+            {
+                "label": "Code",
+                "full": "Source Code",
+                "link": "https://github.com/daniieldvir/ai-game-master"
+            }
+        ]
+    },
+    {
+        "projectName": "AI Frontend Reviewer",
+        "description": "An AI-powered app providing instant feedback on code performance, readability, and best practices. Translates complex code issues into actionable suggestions using LLM integrations.",
+        "team": "Individual",
+        "technology": [
+            "Angular",
+            "Node.js",
+            "OpenAI",
+            "RxJS"
+        ],
+        "styling": "SCSS",
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771759231/1_nv3ufc.png",
+        "tags": [
+            {
+                "label": "Website",
+                "full": "Website",
+                "link": "https://daniieldvir.github.io/ai-frontend-code-reviewer/"
+            },
+            {
+                "label": "Code",
+                "full": "Source Code",
+                "link": "https://github.com/daniieldvir/ai-frontend-code-reviewer"
+            }
+        ]
+    },
+    {
+        "projectName": "DevForm",
+        "description": "A personal developer blog and discussion forum application with nested replies, state management, and optimized asset loading.",
+        "team": "Individual",
+        "technology": [
+            "Angular",
+            "TypeScript",
+            "NGXS",
+            "RxJS"
+        ],
+        "styling": "SCSS",
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1769953732/daniiel/1766503849575_aaqulk.jpg",
+        "tags": [
+            {
+                "label": "Website",
+                "full": "Website",
+                "link": "https://daniieldvir.github.io/devblog/"
+            },
+            {
+                "label": "Code",
+                "full": "Source Code",
+                "link": "https://github.com/daniieldvir/devblog"
+            }
+        ]
+    },
+    {
+        "projectName": "Pokémon Evolution",
+        "description": "An interactive web app for exploring and comparing Pokémon with a focus on UX, performance, and clean architecture. Features include infinite scroll, favorites with localStorage persistence, and side-by-side Pokémon comparison.",
+        "team": "Individual",
+        "technology": [
+            "React",
+            "TypeScript",
+            "PokeAPI"
+        ],
+        "styling": "SCSS",
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771759392/Screenshot_2_ph8p9o.png",
+        "tags": [
+            {
+                "label": "Website",
+                "full": "Website",
+                "link": "https://daniieldvir.github.io/pokemon-evolution/"
+            },
+            {
+                "label": "Code",
+                "full": "Source Code",
+                "link": "https://github.com/daniieldvir/pokemon-evolution"
+            }
+        ]
+    },
+    {
+        "projectName": "Love in My Tummy",
+        "description": "A single-page application built for an artisanal bakery. Developed using React, TypeScript, and SCSS, it offers a seamless and engaging user experience, featuring dynamic routing, an elegant UI with custom styling, and an interactive contact form.",
+        "team": "Individual",
+        "technology": [
+            "React",
+            "TypeScript"
+        ],
+        "styling": "SCSS",
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1771591118/Screenshot_1_srztdu.png",
+        "tags": [
+            {
+                "label": "Website",
+                "full": "Website",
+                "link": "https://daniieldvir.github.io/love-in-my-tummy/"
+            },
+            {
+                "label": "Code",
+                "full": "Source Code",
+                "link": "https://github.com/daniieldvir/love-in-my-tummy"
+            }
+        ]
+    },
+    {
+        "projectName": "Rent me",
+        "description": "An Airbnb-inspired application featuring property listings and bookings, built with Vue.js on the frontend and Node.js with MongoDB on the backend.",
+        "team": "3 members",
+        "technology": [
+            "Vue.js",
+            "Node.js",
+            "MongoDB"
+        ],
+        "styling": "SASS",
         "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1639937591/daniiel/Screen_Shot_2021-12-19_at_20.11.41_czt0nz.png",
         "tags": [
             {
@@ -199,10 +209,34 @@
         ]
     },
     {
+        "projectName": "Appsus",
+        "description": "A versatile three-in-one application containing clones of Google Keep, Gmail, and a bookstore, all built as a unified Vue.js experience.",
+        "team": "2 members",
+        "technology": [
+            "Vue.js"
+        ],
+        "styling": "CSS",
+        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1639943548/daniiel/Screen_Shot_2021-12-19_at_21.51.51_sqghgp.png",
+        "tags": [
+            {
+                "label": "Website",
+                "full": "Website",
+                "link": "https://daniieldvir.github.io/appsus/#/"
+            },
+            {
+                "label": "Code",
+                "full": "Source Code",
+                "link": "https://github.com/daniieldvir/appsus.git"
+            }
+        ]
+    },
+    {
         "projectName": "Dietitian Registration",
-        "description": "Angular project exploring sustainable weight loss approaches.",
+        "description": "A web platform designed for dietitian registrations, exploring sustainable weight loss approaches and client tracking.",
         "team": "Individual",
-        "mainTechnology": "Angular with CLI",
+        "technology": [
+            "Angular"
+        ],
         "styling": "SASS",
         "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1644773768/daniiel/Screen_Shot_2022-02-13_at_19.35.11_swdisw.png",
         "tags": [
@@ -215,29 +249,6 @@
                 "label": "Code",
                 "full": "Source Code",
                 "link": "https://github.com/daniieldvir/smadi"
-            }
-        ]
-    },
-    {
-        "projectName": "Appsus",
-        "description": "Three-in-one Vue.js app: Google-Keep, Gmail, and Book-store applications.",
-        "team": "2 members",
-        "mainTechnology": "Vue.js",
-        "styling": "CSS",
-        "otherTechnologies": [
-            "Session Storage"
-        ],
-        "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1639943548/daniiel/Screen_Shot_2021-12-19_at_21.51.51_sqghgp.png",
-        "tags": [
-            {
-                "label": "Website",
-                "full": "Website",
-                "link": "https://daniieldvir.github.io/appsus/#/"
-            },
-            {
-                "label": "Code",
-                "full": "Source Code",
-                "link": "https://github.com/daniieldvir/appsus.git"
             }
         ]
     }

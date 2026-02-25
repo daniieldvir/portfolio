@@ -18,11 +18,11 @@
                 <div class="contact-me">
                     <h3>Contact Me</h3>
                     <div class="contact-item">
-                        <ng-icon class="icon" name="heroDevicePhoneMobile" size="20"/>
+                        <ng-icon class="icon" name="heroDevicePhoneMobile" size="20" />
                         <a [href]="'tel:' + contact().phone">{{ contact().phone }}</a>
                     </div>
                     <div class="contact-item">
-                        <ng-icon class="icon" name="heroEnvelope" size="20"/>
+                        <ng-icon class="icon" name="heroEnvelope" size="20" />
                         <a [href]="'mailto:' + contact().email">{{ contact().email }}</a>
                     </div>
                 </div>
@@ -33,25 +33,27 @@
                 <h2>Who I Am</h2>
 
                 <p class="bio-text">
-                    Frontend Developer with 4+ years of experience building
-                    user-focused web applications, mostly in large-scale, production environments.
+                    Frontend Developer | Angular Expert | React & TypeScript | Ex-Marketing Data
+                    Analyst
                 </p>
 
                 <p class="bio-text">
-                    I enjoy creating clean, scalable interfaces and collaborating closely with product,
-                    design, and backend teams to turn ideas into intuitive and polished user experiences.
+                    With 4+ perience building enterprise-grade web applications, specializing in Modern Angular (v19)
+                    and Scalable Architecture. My technical backbone is built on RxJS, Signals, and Nx Monorepos, with a
+                    focus on creating high-performance, maintainable systems.
                 </p>
 
                 <p class="bio-text">
-                    My main expertise is in Angular and TypeScript, where I’ve worked extensively on complex
-                    systems, building reusable and responsive UI components using modern patterns and best practices.
-                    I’m experienced with monorepo setups and contributing to shared libraries used in production.
+                    What sets me apart is my <strong>"Product Eye"</strong>—a decade in Marketing and Data Analysis that
+                    allows me to bridge the gap between complex code and business KPIs. From launching Kramer’s first
+                    cloud-SaaS platform to contributing to global UI libraries (NYU, American Airlines), I build
+                    type-safe systems that users love and businesses value.
                 </p>
 
                 <p class="bio-text">
-                    Alongside Angular, I have hands-on experience with React through personal projects and teaching.
-                    This has helped me develop a strong understanding of component-based architecture, state management,
-                    and modern frontend thinking across frameworks.
+                    Beyond Angular, I bring a strong foundation in <strong>React</strong> through personal projects and
+                    my role as an instructor at 'She Codes'. This cross-framework expertise has sharpened my
+                    understanding of component-based architecture and modern state management.
                 </p>
             </div>
         </div>
@@ -64,7 +66,7 @@
         <app-frame class="highlight-card">
             <div class="highlight-icon">{{ highlight.icon }}</div>
             <h3>{{ highlight.title }}</h3>
-            <p >{{ highlight.description }}</p>
+            <p>{{ highlight.description }}</p>
             @if (highlight.stats) {
             <div class="highlight-stats">{{ highlight.stats }}</div>
             }

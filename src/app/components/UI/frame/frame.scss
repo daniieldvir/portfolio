@@ -7,7 +7,7 @@
     height: var(--frame-height, 300px);
 
     background: $frame-background-color; //A semi-transparent dark background that allows the image to be slightly reflected from behind.
-    backdrop-filter: blur(8px); //A glass-like effect that blurs the text.
+    backdrop-filter: var(--frame-backdrop-filter, blur(8px));
     border: 2px solid $frame-border-color; //A dark brown border that adds a natural wood texture.
     border-radius: 15px;
     box-shadow: 0 20px 50px $frame-shadow-color-dark, 0 0 15px $frame-shadow-color-light; //A soft golden glow that reflects off the frame.

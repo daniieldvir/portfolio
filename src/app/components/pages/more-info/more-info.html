@@ -12,11 +12,11 @@
 
             <div class="questions">
                 @for (q of questions(); track q.question) {
-                <app-question-button [title]="q.question" (selectQuestionClick)="selectQuestion(q.answer)"/>
+                <app-question-button [title]="q.question" (selectQuestionClick)="selectQuestion(q.answer)" />
                 }
             </div>
 
-            <app-decoration class="divider" [amount]="3"/>
+            <app-decoration class="divider" [amount]="3" />
             @if (displayedText()) {
 
             <div class="narrator-response">
@@ -25,4 +25,8 @@
             }
         </div>
     </app-frame>
+
+    <div class="copyright-footer">
+        <p>© {{ date }} Daniiel Dvir. Built with Angular. All rights reserved. </p>
+    </div>
 </div>

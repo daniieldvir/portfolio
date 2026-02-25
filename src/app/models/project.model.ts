@@ -2,9 +2,8 @@ export interface Project {
   projectName: string
   description: string
   team: string
-  mainTechnology: string
   styling: string
-  otherTechnologies?: string[]
+  technology?: string[]
   img: string
   tags: Tag[]
   userAccess?: UserAccess[]

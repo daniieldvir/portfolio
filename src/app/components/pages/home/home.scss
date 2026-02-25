@@ -31,55 +31,181 @@
     .left {
       flex-shrink: 0;
 
+      .frame-content-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+
+      }
+
       .line {
-        font-size: 18px;
+        font-size: 16px;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
         color: $main-text-color;
         opacity: 0.9;
-
-        @include tablet {
-          font-size: 16px;
-        }
+        margin-bottom: 5px;
 
         @include mobile {
           font-size: 14px;
-          letter-spacing: 1px;
+          letter-spacing: 2px;
         }
       }
 
       .narrator-name {
-        font-size: 40px;
-        font-weight: bold;
-        color: $main-text-color-highlight;
-        text-transform: capitalize;
-        text-shadow:
-          0 0 10px $main-text-color-shadow,
-          2px 2px 4px $main-text-color-shadow-2;
+        font-size: 56px;
+        font-weight: 800;
         margin: 5px 0;
+        letter-spacing: 2px;
 
         @include tablet {
-          font-size: 32px;
+          font-size: 42px;
         }
 
         @include mobile {
-          font-size: 26px;
+          font-size: 32px;
+        }
+      }
+
+      .shimmer-text {
+        color: transparent;
+        background: linear-gradient(90deg,
+            $main-text-color-highlight 0%,
+            #fff 50%,
+            $main-text-color-highlight 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: shimmer 4s linear infinite;
+        text-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+      }
+
+      @keyframes shimmer {
+        to {
+          background-position: 200% center;
         }
       }
 
       .highlight {
         font-style: italic;
         color: $secondary-text-color;
-        font-size: 20px;
+        font-size: 18px;
+        text-transform: none;
         letter-spacing: 1px;
         text-shadow: 0 0 8px $secondary-text-color-shadow;
 
-        @include tablet {
-          font-size: 18px;
-        }
-
         @include mobile {
           font-size: 16px;
+        }
+      }
+
+      .typewriter-container {
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 0.1s 1s forwards;
+      }
+
+      .typewriter {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0;
+        text-align: center;
+        animation: typing 1.5s steps(30, end) 1s forwards;
+      }
+
+      .cursor {
+        animation: blink 1s step-end infinite;
+        vertical-align: baseline;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+
+        to {
+          width: 30ch;
+        }
+      }
+
+      @keyframes blink {
+
+        from,
+        to {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+        }
+      }
+
+      .fade-in-up {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+
+      .delay-1 {
+        animation-delay: 0.2s;
+      }
+
+      .delay-2 {
+        animation-delay: 0.4s;
+      }
+
+      .delay-3 {
+        animation-delay: 0.6s;
+      }
+
+      .delay-4 {
+        animation-delay: 0.8s;
+      }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .download-resume-btn {
+        margin-top: 20px;
+        display: inline-block;
+        padding: 12px 30px;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #1c1a17;
+        background-color: $decoration-color;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        letter-spacing: 2px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.2);
+
+        &:hover {
+          background-color: rgba(28, 26, 23, 0.9);
+          color: $decoration-color;
+          border-color: $decoration-color;
+          transform: translateY(-3px);
+          box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        &:active {
+          transform: translateY(0);
         }
       }
     }
@@ -117,7 +243,7 @@
         cursor: pointer;
 
         .section-frame-label {
-         padding: 10px;
+          padding: 10px;
         }
 
         @include mobile {

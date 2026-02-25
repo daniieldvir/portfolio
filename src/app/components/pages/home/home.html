@@ -4,9 +4,11 @@
       <div class="frame-content">
         <div class="frame-content-item">
           <div class="frame-content-item-title">
-            <div class="line">hi, i'm your narrator</div>
-            <div class="narrator-name">daniiel dvir</div>
-            <div class="line highlight">what adventurer do you seek?</div>
+            <div class="line fade-in-up delay-1">Frontend Developer</div>
+            <h1 class="narrator-name shimmer-text fade-in-up delay-2">Daniiel Dvir</h1>
+            <div class="typewriter-container">
+              <div class="line highlight typewriter">what adventurer do you seek?<span class="cursor">_</span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -16,12 +18,12 @@
 
   <div class="right">
     @for (section of pagesSections(); track section.label) {
-      <app-frame (click)="handleSectionClick(section)" class="section-frame" [decorationAmount]="1" [bottomDecoration]="true">
-        <div class="section-frame-label">
-          {{ section.label }}
-        </div>
-       
-      </app-frame>
+    <app-frame (click)="handleSectionClick(section)" class="section-frame" [decorationAmount]="1"
+      [bottomDecoration]="true">
+      <div class="section-frame-label">
+        {{ section.label }}
+      </div>
+    </app-frame>
     }
   </div>
 </div>

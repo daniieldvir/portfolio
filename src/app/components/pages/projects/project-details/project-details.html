@@ -3,31 +3,6 @@
     <div class="image-container">
         <img [src]="project()!.img" [alt]="project()!.projectName" class="project-image" />
         <div class="image-gradient"></div>
-    </div>
-
-    <div class="card-content">
-        <h3 class="project-title">{{ project()!.projectName }}</h3>
-        <p class="project-technology">{{project()!.mainTechnology}}</p>
-        <p class="project-description">{{ project()!.description }}</p>
-
-        @if (project()?.userAccess?.length) {
-            <div class="project-user-access">
-                @for (user of project()!.userAccess; track user.userName) {
-                <p>Username: {{ user.userName }} | Password: {{ user.password }}</p>
-                }
-            </div>
-            }
-    </div>
-
-    <div class="project-footer">
-        @if (project()!.otherTechnologies) {
-        <div class="project-tags">
-            @for (tech of project()!.otherTechnologies; track tech) {
-            <app-project-tag [label]="tech" />
-            }
-        </div>
-        }
-
         <div class="links-tags">
             @for (tag of project()!.tags; track tag.label) {
             <a [href]="tag.link" target="_blank" rel="noopener noreferrer" [attr.title]="tag.full" class="quick-link">
@@ -41,6 +16,29 @@
             </a>
             }
         </div>
+    </div>
+
+    <div class="card-content">
+        <h3 class="project-title">{{ project()!.projectName }}</h3>
+        <p class="project-description">{{ project()!.description }}</p>
+
+        @if (project()?.userAccess?.length) {
+        <div class="project-user-access">
+            @for (user of project()!.userAccess; track user.userName) {
+            <p>Username: {{ user.userName }} | Password: {{ user.password }}</p>
+            }
+        </div>
+        }
+    </div>
+
+    <div class="project-footer">
+        @if (project()!.technology) {
+        <div class="project-tags">
+            @for (tech of project()!.technology; track tech) {
+            <app-project-tag [label]="tech" />
+            }
+        </div>
+        }
     </div>
 
 </div>

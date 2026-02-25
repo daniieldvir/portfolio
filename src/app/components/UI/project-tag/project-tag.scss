@@ -1,7 +1,11 @@
 @use '../../../../styles/colors' as *;
 
 .project-tag {
-    color: $secondary-text-color;
-    padding: 4px 10px;
+    color: inherit;
     text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+        color: $main-text-color-highlight;
+    }
 }
