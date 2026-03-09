@@ -31,6 +31,7 @@
     "team": "Individual",
     "technology": ["React", "Node.js", "Prisma", "TypeScript", "React Query"],
     "styling": "SCSS",
+    "isDesktopOnly": true,
     "userAccess": [
       {
         "userName": "Daniiel",
@@ -62,6 +63,7 @@
     "team": "Individual",
     "technology": ["React", "Node.js", "TypeScript", "Groq AI"],
     "styling": "SCSS",
+    "isDesktopOnly": true,
     "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1770918361/Screenshot_1_yagn4p.png",
     "tags": [
       {
@@ -82,6 +84,7 @@
     "team": "Individual",
     "technology": ["Angular"],
     "styling": "SCSS",
+    "isDesktopOnly": true,
     "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1773077094/Screenshot_3_aotg8p.png",
     "tags": [
       {
