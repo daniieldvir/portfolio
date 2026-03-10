@@ -82,7 +82,7 @@
     "projectName": "DevTools Hub",
     "description": "Web application that brings together useful everyday developer utilities in one place — such as strong password generation, Base64 encoding/decoding, and more",
     "team": "Individual",
-    "technology": ["Angular"],
+    "technology": ["Angular", "Node.js / Express", "Groq AI"],
     "styling": "SCSS",
     "isDesktopOnly": true,
     "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1773077094/Screenshot_3_aotg8p.png",
