@@ -1,31 +1,5 @@
 [
   {
-    "projectName": "Task Manager",
-    "description": "A comprehensive task management application that enables users to securely log in, organize, and track their tasks efficiently with real-time database synchronization.",
-    "team": "Individual",
-    "technology": ["Angular", "Supabase", "Node.js", "NGXS"],
-    "styling": "SCSS",
-    "img": "https://res.cloudinary.com/disku3v4j/image/upload/v1770918558/1770290626085_poo8ge.jpg",
-    "userAccess": [
-      {
-        "userName": "test@test.com",
-        "password": "123456"
-      }
-    ],
-    "tags": [
-      {
-        "label": "Website",
-        "full": "Website",
-        "link": "https://daniieldvir.github.io/task-manager/login"
-      },
-      {
-        "label": "Code",
-        "full": "Source Code",
-        "link": "https://github.com/daniieldvir/task-manager"
-      }
-    ]
-  },
-  {
     "projectName": "TaskFlow",
     "description": "An Incident Management Dashboard to manage alert tasks and incidents with capabilities to add, edit, delete, and filter through an interactive overview.",
     "team": "Individual",
